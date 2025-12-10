@@ -31,7 +31,7 @@ stages:
     - task: Application security testing@2025
       inputs:
         projectName: 'Azuredevops'
-        enableProxy: false
+        enableProxy: true
         enableSastScan: true
         CheckmarxService: 'Sast Connection'
         enableSastBranching: false
