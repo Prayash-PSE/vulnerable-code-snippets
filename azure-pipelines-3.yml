@@ -14,7 +14,7 @@ stages:
         projectName: 'Azuredevops'
         enableProxy: false
         enableSastScan: true
-        CheckmarxService: 'SAST_Connection_01'
+        CheckmarxService: 'Sast Connection'
         enableSastBranching: false
         incScan: false
         generatePDFReport: true
