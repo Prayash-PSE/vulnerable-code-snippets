@@ -24,7 +24,7 @@ steps:
     CheckmarxService: 'Git-H'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
-    tenantName: '$(CX_TENANT)'
+    tenantName: 'ps_prayash_mishra'
     additionalParams: |
       --client-id $(CX_CLIENT_ID)
       --client-secret $(CX_CLIENT_SECRET)
