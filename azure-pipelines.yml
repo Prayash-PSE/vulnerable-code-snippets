@@ -19,6 +19,12 @@ steps:
   displayName: 'Run a multi-line script'
 
 - task: Checkmarx AST@3
+  displayName: "Run Checkmarx One Scan"
   inputs:
+    CheckmarxService: 'Git-H'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
+    tenantName: '$(CX_TENANT)'
+    additionalParams: |
+      --client-id $(CX_CLIENT_ID)
+      --client-secret $(CX_CLIENT_SECRET)
