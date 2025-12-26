@@ -22,9 +22,9 @@ steps:
   displayName: "Run Checkmarx One Scan"
   inputs:
     CheckmarxService: 'Git-H'
-    projectName: '$(Build.Repository.Name)'
-    branchName: '$(Build.SourceBranchName)'
+    projectName: 'GitxAzure'
+    branchName: 'main'
     tenantName: 'ps_prayash_mishra'
     additionalParams: |
-      --client-id $(CX_CLIENT_ID)
-      --client-secret $(CX_CLIENT_SECRET)
+      --client-id myclient
+      --client-secret 0z4aBQG1E7J6niqtqKr1c9uwBRFqmebs
